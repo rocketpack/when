@@ -1,6 +1,6 @@
 {
     "name": "when",
-    "version": "1.6.1",
+    "version": "1.6.2",
 	"description": "A lightweight Promise and when() implementation, plus other async goodies.",
 	"keywords": ["promise", "promises", "deferred", "deferreds", "when", "async", "asynchronous", "cujo"],
 	"licenses": [
@@ -12,7 +12,7 @@
 	"repositories": [
 		{
 			"type": "git",
-			"url": "https://github.com/cujojs/when"
+			"url": "https://github.com/rocketpack/when"
 		}
 	],
 	"bugs": "https://github.com/cujojs/when/issues",
