@@ -52,7 +52,7 @@ define(['module'], function () {
 			}
 			if(next >= arr.length) {
 				if(running === 0) {
-					return dfd.resolve(results);
+					dfd.resolve(results);
 				}
 				return;
 			}
@@ -70,8 +70,11 @@ define(['module'], function () {
 				dfd = null;
 			});
 		}
-
-		arr.forEach(function() { runNext(); });
+		
+		if (arr.length === 0)
+			dfd.resolve(results);
+		else
+			arr.forEach(function() { runNext(); });
 		return dfd;
 	}
 
